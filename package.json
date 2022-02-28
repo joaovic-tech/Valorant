@@ -1,0 +1,26 @@
+{
+  "name": "valorant",
+  "version": "1.0.0",
+  "description": "Valorant - design de conceito da página de agentes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaovic2k/Valorant.git"
+  },
+  "author": "joaovic2k",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaovic2k/Valorant/issues"
+  },
+  "homepage": "https://github.com/joaovic2k/Valorant#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

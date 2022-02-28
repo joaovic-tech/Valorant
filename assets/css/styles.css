@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*====  RESET ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  height: auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* settings */
+:root{
+  --color-dark: #1F2326;
+  --color-light: #FFFF;
+  --color-light-alt: #EFEFEF;
+  --color-primary: #FF4656;
+}
+
+body{
+  background: var(--color-primary);
+  background-image: url('/img/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+/* #navigation */
+
+#header {
+  display: flex;
+  background: var(--color-dark);
+  color: var(--color-light);
+  width: 100%;
+}
+
+#nav {
+  height: 4.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#nav .logo{
+  font-size: 1.5rem;
+  color: var(--color-light);
+  transition: color 0.2s;
+  position: relative;
+  margin-right: 2rem;
+  transition: .3s;
+}
+
+#nav .logo:hover{
+  color: var(--color-light);
+  opacity: .7;
+}
+
+.logo:after{
+  display: none;
+}
+
+#logo_RiotGames{
+  margin-right: 1rem;
+  width: 2.5rem;
+}
+
+#logo_valorant{
+  width: 1.5rem;
+  margin-left: 1rem;
+}
+
+#nav ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: .75rem;
+  line-height: 17px;
+  transition: color 0.2s;
+  position: relative;
+  color: var(--color-light);
+}
+
+#perfil i,
+#nav ul li a i{
+  margin-left: .6rem;
+}
+
+#nav ul li a:hover,
+#nav ul li a.active {
+  color: var(--color-primary);
+}
+
+#nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: .2rem;
+  background: var(--color-primary);
+  position: absolute;
+  left: 0;
+  bottom: -1.6rem;
+  transition: width 0.2s;
+}
+
+#nav ul li a:hover::after,
+#nav ul li a.active::after {
+  width: 100%;
+}
+
+
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
+  top: -20rem;
+  transition: 0.2s;
+}
+
+nav .menu ul {
+  display: none;
+}
+
+/* Mostrar menu */
+#nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+  background: var(--color-dark);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-content: center;
+}
+
+#nav.show .menu ul {
+  display: grid;
+}
+
+#nav.show ul.grid {
+  gap: 4rem;
+}
+
+/* toggle menu */
+.toggle {
+  color: var(--color-light);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.toggle:hover,
+.toggle:focus{
+  color: var(--color-primary);
+}
+
+#nav .fa-xmark {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -1.5rem;
+  right: 1.5rem;
+  transition: 0.2s;
+}
+
+#nav.show .fa-xmark {
+  visibility: visible;
+  opacity: 1;
+  top: 1.5rem;
+}
+
+#nav.show ul.grid {
+  gap: 2.5rem;
+}
+
+#perfil{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#perfil span{
+  margin: 1rem;
+  cursor: pointer;
+}
+
+#perfil span:hover{
+  color: var(--color-primary);
+}
+
+/*  ################################---RESPONSIVE---################################  */
+
+@media (min-width: 1200px) {
+  /* navigation */
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+
+  nav .fa-bars {
+    display: none;
+  }
+}

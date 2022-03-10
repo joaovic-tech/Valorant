@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap');
 /*====  RESET ============================ */
 * {
   margin: 0;
@@ -21,9 +21,13 @@ html {
 /* settings */
 :root{
   --color-dark: #1F2326;
-  --color-light: #FFFF;
+  --color-light: #F8F8F8;
   --color-light-alt: #EFEFEF;
   --color-primary: #FF4656;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body{
@@ -32,6 +36,19 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
+}
+
+body::-webkit-scrollbar{
+  width: .5rem;              
+}
+  
+body::-webkit-scrollbar-track{
+  background: var(--color-light-alt);
+}
+ 
+body::-webkit-scrollbar-thumb{
+  background: var(--color-dark);
+  border-radius: 1rem;
 }
 
 .container {
@@ -54,7 +71,7 @@ body{
 }
 
 #nav {
-  height: 4.1rem;
+  height: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,7 +111,7 @@ body{
 
 #logo_RiotGames{
   margin-right: 1rem;
-  width: 2.5rem;
+  width: 2rem;
 }
 
 #logo_valorant{
@@ -108,14 +125,13 @@ body{
   justify-content: center;
   font-style: normal;
   font-weight: bold;
-  font-size: .75rem;
+  font-size: .8rem;
   line-height: 17px;
   transition: color 0.2s;
   position: relative;
   color: var(--color-light);
 }
 
-#perfil i,
 #nav ul li a i{
   margin-left: .6rem;
 }
@@ -128,11 +144,11 @@ body{
 #nav ul li a::after {
   content: '';
   width: 0%;
-  height: .2rem;
+  height: .3rem;
   background: var(--color-primary);
   position: absolute;
   left: 0;
-  bottom: -1.6rem;
+  bottom: -1.2rem;
   transition: width 0.2s;
 }
 
@@ -214,8 +230,11 @@ nav .menu ul {
 }
 
 #perfil span{
+  font-size: .8rem;
   margin: 1rem;
   cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
 }
 
 #perfil span:hover{
@@ -250,4 +269,235 @@ nav .menu ul {
   nav .fa-bars {
     display: none;
   }
+}
+
+/* Section dos agents */
+
+#container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+li.divT{
+  width: 10rem;
+  height: 25rem;
+  background: transparent;
+  cursor: auto;
+  border-top-left-radius: 0;
+  margin: 0;
+  transition: .2s ease-in-out;
+  position: relative;
+}
+
+li.divT:hover{
+  background: transparent;
+}
+
+.text{
+  position: absolute;
+  top: 12rem;
+  left: -8rem;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: .5rem;
+  transform: rotate(90deg);
+  font-size: 8rem;
+  color: transparent;
+  -webkit-text-stroke-width: .01rem;
+  -webkit-text-stroke-color: var(--color-light-alt);
+}
+
+#list-agents{
+  display: flex;
+}
+
+.agent{
+  width: 14rem;
+  height: 30rem;
+  background: var(--color-dark);
+  border-top-left-radius: .5rem;
+  margin: 2rem;
+  cursor: pointer;
+  transition: .1s ease-in-out;
+  position: relative;
+}
+
+.agent:hover,
+.agent:focus{
+  background: var(--color-light);
+}
+
+.agent h1{
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  color: transparent;
+  -webkit-text-stroke-width: .01rem;
+  -webkit-text-stroke-color: var(--color-light-alt);
+  width: 15rem;
+  margin-top: 7rem;
+  margin-left: -8rem;
+  transition: .1s ease-in-out;
+}
+
+.agent:hover h1,
+.agent:focus h1{
+  -webkit-text-stroke-color: var(--color-dark);
+}
+
+.agent p{
+  color: var(--color-primary);
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  transform: rotate(90deg);
+  width: 15rem;
+  margin-top: -3.2rem;
+  margin-left: -5.5rem;
+}
+
+#abilities{
+  width: 100%;
+  height: 3.8rem;
+  position: absolute;
+  bottom: -1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-dark);
+  border: .1rem solid var(--color-light);
+  transition: .1s ease-in-out;
+}
+
+.agent:hover #abilities,
+.agent:focus #abilities{
+  background: var(--color-light);
+  border: .1rem solid var(--color-dark);
+}
+
+#abilities img{
+  width: 1.5rem;
+  margin: 0.2rem auto;
+  transition: .3s ease-in-out;
+}
+
+#abilities img:hover{
+  transform: translateY(-.8rem);
+}
+
+ul #agent-phoenix{
+  background-image: url('/img/agent-phoenix.png');
+  background-size: cover;
+}
+
+ul #agent-jeff{
+  background-image: url('/img/agent-jeff.png');
+  background-size: cover;
+}
+
+ul #agent-sova{
+  background-image: url('/img/agent-sova.png');
+  background-size: cover;
+}
+
+#list-agents #agent-sage{
+  background-image: url('/img/agent-sage.png');
+  background-size: cover;
+}
+
+footer{
+  width: 100%;
+  margin-top: 10rem;
+  height: 8rem;
+  background: var(--color-light);
+  display: flex;
+  position: absolute;
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -4rem auto;
+  background: var(--color-light);
+  border: .1rem solid var(--color-dark);
+  border-top-left-radius: .8rem;
+  width: 20rem;
+  height: 10rem;
+}
+
+.card h1{
+  font-size: 1.1rem;
+  color: #C4C4C4;
+}
+
+.card h2{
+  font-size: .6rem;
+  margin: .5rem auto;
+}
+
+.card p{
+  font-size: .7rem;
+  color: #6d6d6d;
+  padding-bottom: 1.5rem;
+}
+
+.c1,.c2{
+  margin-left: .5rem;
+}
+
+.img-footer{
+  position: relative;
+  width: 6rem;
+  margin: 2.5rem;
+  left: 1.5rem;
+  z-index: 1;
+}
+.block1::before{
+  content: '';
+  position: absolute;
+  width: 7rem;
+  height: 6.8rem;
+  top: -.88rem;
+  left: 12rem;
+  background: var(--color-primary);
+  z-index: 0;
+}
+
+.block2::before{
+  content: '';
+  position: absolute;
+  width: 7rem;
+  height: 6.8rem;
+  top: -.88rem;
+  left: 35.7rem;
+  background: var(--color-primary);
+  z-index: 0;
+}
+
+
+.block3::before{
+  content: '';
+  position: absolute;
+  width: 7rem;
+  height: 6.8rem;
+  top: -.88rem;
+  left: 59rem;
+  background: var(--color-primary);
+  z-index: 0;
+}
+
+.card-second{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -4rem auto;
+  background: var(--color-light);
+  border: .1rem solid var(--color-dark);
+  border-top-left-radius: .8rem;
+  width: 10rem;
+  height: 10rem;
 }

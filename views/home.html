@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/styles.css">
   <title>Valorant - design de conceito da página de agentes</title>
+  <link rel="shortcut icon" type="imagex/svg" href="/svg/logo.svg">
 </head>
 <body>
   <header id='header'>
@@ -28,12 +29,92 @@
       </div>
       <div id="perfil">
         <img src="/img/user.png" alt="">
-        <span>UNEPICKID <i class="fa-solid fa-sort-down"></i></span>
+        <span>JOAOVIC2K <i class="fa-solid fa-sort-down"></i></span>        
       </div>
       <i class="fa-solid fa-bars toggle"></i>
       <i class="fa-solid fa-xmark toggle"></i>
     </nav>    
   </header>
+  <main id="container">
+    <ul id="list-agents">
+      <li class="agent divT"><h2 class="text">AGENTS</h2></li>
+      <li id="agent-phoenix" class="agent" onmouseover="IconDP()" onmouseout="IconLP()">
+        <h1>phoenix</h1>
+        <p>United Kingdom</p>
+        <div id="abilities">          
+          <img src="/img/icon/phoenix-a1.png" alt="phoenix primeira habilidade" id="PIcon1">
+          <img src="/img/icon/phoenix-a2.png" alt="phoenix segunda habilidade" id="PIcon2">
+          <img src="/img/icon/phoenix-a3.png" alt="phoenix terceira habilidade" id="PIcon3">
+          <img src="/img/icon/phoenix-a4.png" alt="phoenix quarta habilidade" id="PIcon4">
+        </div>
+      </li>
+      <li id="agent-jeff" class="agent" onmouseover="IconDJ()" onmouseout="IconLJ()">
+        <h1>jeff</h1>
+        <p>South Korea</p>
+        <div id="abilities">          
+          <img src="/img/icon/jeff-a1.png" alt="jeff primeira habilidade" id="JIcon1">
+          <img src="/img/icon/jeff-a2.png" alt="jeff segunda habilidade" id="JIcon2">
+          <img src="/img/icon/jeff-a3.png" alt="jeff terceira habilidade" id="JIcon3">
+          <img src="/img/icon/jeff-a4.png" alt="jeff quarta habilidade" id="JIcon4">
+        </div>
+      </li>
+      <li id="agent-sova" class="agent" onmouseover="IconDSV()" onmouseout="IconLSV()">
+        <h1>sova</h1>
+        <p>Russia</p>
+        <div id="abilities">          
+          <img src="/img/icon/sova-a1.png" alt="sova primeira habilidade" id="SVIcon1">
+          <img src="/img/icon/sova-a2.png" alt="sova segunda habilidade" id="SVIcon2">
+          <img src="/img/icon/sova-a3.png" alt="sova terceira habilidade" id="SVIcon3">
+          <img src="/img/icon/sova-a4.png" alt="sova quarta habilidade" id="SVIcon4">
+        </div>
+      </li>
+      <li id="agent-sage" class="agent" onmouseover="IconDSG()" onmouseout="IconLSG()">
+        <h1>sage</h1>
+        <p>China</p>
+        <div id="abilities">          
+          <img src="/img/icon/sage-a1.png" alt="sage primeira habilidade" id="SGIcon1">
+          <img src="/img/icon/sage-a2.png" alt="sage segunda habilidade" id="SGIcon2">
+          <img src="/img/icon/sage-a3.png" alt="sage terceira habilidade" id="SGIcon3">
+          <img src="/img/icon/sage-a4.png" alt="sage quarta habilidade" id="SGIcon4">
+        </div>
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <div class="card">
+      <div class="c1">
+        <h1>BASIC</h1>
+        <h2>Slow Orb</h2>
+        <p>Cast out a radianite orb that breaks into a slowing field upon impact with the ground.</p>
+      </div>
+      <div class="c2 block1">
+        <img src="/img/icon-2.png" alt="icone de uma habilidade" class="img-footer">
+      </div>
+    </div> 
+    <div class="card">
+      <div class="c1">
+        <h1>SIGNATURE</h1>
+        <h2>Healing Orb</h2>
+        <p>Heal an ally or yourself to full health over a few seconds.</p>
+      </div>
+      <div class="c2 block2">
+        <img src="/img/icon-1.png" alt="icone de uma habilidade" class="img-footer">
+      </div>
+    </div> 
+    <div class="card">
+      <div class="c1">
+        <h1>ULTIMATE</h1>
+        <h2>Resurrection</h2>
+        <p>Target a friendly corpse. After a short delay, revive them with full health.</p>
+      </div>
+      <div class="c2 block3">
+        <img src="/img/icon-heart.png" alt="icone de uma habilidade" class="img-footer">
+      </div>
+    </div> 
+    <div class="card-second">
+      <i class="fas fa-play"></i>
+    </div> 
+  </footer>
   <!-- FontWesome -->
   <script src="https://kit.fontawesome.com/673aed7dea.js" crossorigin="anonymous"></script>
   <!-- Main -->

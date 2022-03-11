@@ -292,7 +292,7 @@ li.divT:hover{
 }
 
 .agent{
-  width: 15rem;
+  width: 14rem;
   height: 30rem;
   background: var(--color-dark);
   border-top-left-radius: .5rem;
@@ -568,11 +568,7 @@ footer{
 }
 
 @media(max-width: 1088px){
-  #header{
-    position: fixed;
-  }
   li.agent{
-    margin-top: 5rem;
     width: 20rem;
     height: 40rem;
   }
@@ -626,35 +622,5 @@ footer{
   .img-footer{
     top: 1.5rem;
     left: 6.2rem;
-  }
-
-  #agent-phoenix h1{
-    left: -4.8rem;
-  }
-  #agent-phoenix p{
-    left: 1rem;
-  }
-  
-  #agent-jeff h1{
-    top: 2.5rem;
-    left: -1.4rem;
-  }
-  #agent-jeff p{
-    top: 3.2rem;
-    left: 1.7rem;
-  }
-  
-  #agent-sova h1{
-    left: -2rem;
-  }
-  #agent-sova p{
-    left: 2.8rem;
-  }
-  
-  #agent-sage h1{
-    left: -1.8rem;
-  }
-  #agent-sage p{
-    left: 3.2rem;
   }
 }

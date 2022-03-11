@@ -252,6 +252,7 @@ nav .menu ul {
   box-shadow: 0 0 2rem var(--color-primary);
   border-radius: 1rem;
   gap: 0;
+  z-index: 6;
 }
 
 /* Section dos agents */
@@ -496,19 +497,11 @@ footer{
 }
 /*  ################################---RESPONSIVE---################################  */
 
-@media(max-width: 720px){
-  body footer{
-    display: block;
-  }
-}
-
-@media(max-width: 380px){
-  #logo_RiotGames{
-    margin-right: 0;
-  }
-  
-  #logo_valorant{
-    margin-left: 0;
+@media (min-width: 1900px) {
+  footer{
+    
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -541,7 +534,9 @@ footer{
 }
 
 @media(max-width: 1200px){
-
+  body{
+    background-repeat: repeat;
+  }
   .text{
     position: fixed;
     top: 5%;
@@ -551,7 +546,7 @@ footer{
     margin: 0;
   }
   #list-agents{
-    display: block;
+    display: grid;
     margin: auto;
   }
   li.divT{
@@ -572,10 +567,59 @@ footer{
   }
 }
 
-@media (min-width: 1900px) {
-  footer{
+@media(max-width: 780px){
+  body footer{
+    display: block;
+  }
+
     
+  .agent{
+    width: 25rem;
+    height: 50rem;
+  }
+
+  .c1{
     position: absolute;
-    bottom: 0;
+    left: 1rem;
+  }
+
+  .card,card-second{
+    width: 100%;
+  }
+  .card::before{
+    left: 35rem;
+  }
+
+  .img-footer{
+    top: 1.5rem;
+    left: 14.5rem;
+  }
+}
+
+@media(max-width: 380px){
+  #logo_RiotGames{
+    margin-right: 0;
+  }
+  
+  #logo_valorant{
+    margin-left: 0;
+  }
+
+  .agent{
+    width: 14rem;
+    height: 30rem;
+  }
+
+  .c1{
+    width: 10rem;
+  }
+  
+  .card::before{
+    left: 14rem;
+  }
+
+  .img-footer{
+    top: 1.5rem;
+    left: 6.2rem;
   }
 }

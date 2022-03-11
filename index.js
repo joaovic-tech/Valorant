@@ -26,5 +26,5 @@ app.get('/', (req,res) => {
 })
 
 app.listen(PORT, () => {
-  console.log('Server do bolado lendário João rodando na porta: https: ' + PORT);
+  console.log('Server do bolado lendário João rodando na porta: ' + PORT);
 });

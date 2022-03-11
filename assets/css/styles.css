@@ -567,15 +567,16 @@ footer{
   }
 }
 
-@media(max-width: 780px){
-  body footer{
-    display: block;
-  }
-
-    
+@media(max-width: 780){
   .agent{
     width: 25rem;
     height: 50rem;
+  }
+}
+
+@media(max-width: 780px){
+  body footer{
+    display: block;
   }
 
   .c1{

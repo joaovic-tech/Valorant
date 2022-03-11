@@ -567,7 +567,7 @@ footer{
   }
 }
 
-@media(max-width: 780){
+@media(max-width: 1088){
   .agent{
     width: 25rem;
     height: 50rem;

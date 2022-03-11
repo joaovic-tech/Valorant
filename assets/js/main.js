@@ -19,25 +19,25 @@ for (const link of links) {
 
 /* icon */
 /* phoenix */
-PIcon1 = document.hetElementById('PIcon1');
-PIcon2 = document.hetElementById('PIcon2');
-PIcon3 = document.hetElementById('PIcon3');
-PIcon4 = document.hetElementById('PIcon4');
+PIcon1 = document.getElementById('PIcon1')
+PIcon2 = document.getElementById('PIcon2')
+PIcon3 = document.getElementById('PIcon3')
+PIcon4 = document.getElementById('PIcon4')
 /* jeff */
-JIcon1 = document.hetElementById('JIcon1');
-JIcon2 = document.hetElementById('JIcon2');
-JIcon3 = document.hetElementById('JIcon3');
-JIcon4 = document.hetElementById('JIcon4');
+JIcon1 = document.getElementById('JIcon1')
+JIcon2 = document.getElementById('JIcon2')
+JIcon3 = document.getElementById('JIcon3')
+JIcon4 = document.getElementById('JIcon4')
 /* sova */
-SVIcon1 = document.hetElementById('SVIcon1');
-SVIcon2 = document.hetElementById('SVIcon2');
-SVIcon3 = document.hetElementById('SVIcon3');
-SVIcon4 = document.hetElementById('SVIcon4');
+SVIcon1 = document.getElementById('SVIcon1')
+SVIcon2 = document.getElementById('SVIcon2')
+SVIcon3 = document.getElementById('SVIcon3')
+SVIcon4 = document.getElementById('SVIcon4')
 /* sage */
-SGIcon1 = document.hetElementById('SGIcon1');
-SGIcon2 = document.hetElementById('SGIcon2');
-SGIcon3 = document.hetElementById('SGIcon3');
-SGIcon4 = document.hetElementById('SGIcon4');
+SGIcon1 = document.getElementById('SGIcon1')
+SGIcon2 = document.getElementById('SGIcon2')
+SGIcon3 = document.getElementById('SGIcon3')
+SGIcon4 = document.getElementById('SGIcon4')
 function IconDP() {
   /* phoenix */
   PIcon1.src = '/img/icon/phoenix-b1.png'
@@ -45,21 +45,21 @@ function IconDP() {
   PIcon3.src = '/img/icon/phoenix-b3.png'
   PIcon4.src = '/img/icon/phoenix-b4.png'
 }
-function IconDJ(){
+function IconDJ() {
   /* jeff */
   JIcon1.src = '/img/icon/jeff-b1.png'
   JIcon2.src = '/img/icon/jeff-b2.png'
   JIcon3.src = '/img/icon/jeff-b3.png'
   JIcon4.src = '/img/icon/jeff-b4.png'
 }
-function IconDSV(){
+function IconDSV() {
   /* sova */
   SVIcon1.src = '/img/icon/sova-b1.png'
   SVIcon2.src = '/img/icon/sova-b2.png'
   SVIcon3.src = '/img/icon/sova-b3.png'
   SVIcon4.src = '/img/icon/sova-b4.png'
 }
-function IconDSG(){
+function IconDSG() {
   /* sage */
   SGIcon1.src = '/img/icon/sage-b1.png'
   SGIcon2.src = '/img/icon/sage-b2.png'
@@ -73,24 +73,33 @@ function IconLP() {
   PIcon3.src = '/img/icon/phoenix-a3.png'
   PIcon4.src = '/img/icon/phoenix-a4.png'
 }
-function IconLJ(){
+function IconLJ() {
   /* jeff */
   JIcon1.src = '/img/icon/jeff-a1.png'
   JIcon2.src = '/img/icon/jeff-a2.png'
   JIcon3.src = '/img/icon/jeff-a3.png'
   JIcon4.src = '/img/icon/jeff-a4.png'
 }
-function IconLSV(){
+function IconLSV() {
   /* sova */
   SVIcon1.src = '/img/icon/sova-a1.png'
   SVIcon2.src = '/img/icon/sova-a2.png'
   SVIcon3.src = '/img/icon/sova-a3.png'
   SVIcon4.src = '/img/icon/sova-a4.png'
 }
-function IconLSG(){
+function IconLSG() {
   /* sage */
   SGIcon1.src = '/img/icon/sage-a1.png'
   SGIcon2.src = '/img/icon/sage-a2.png'
   SGIcon3.src = '/img/icon/sage-a3.png'
   SGIcon4.src = '/img/icon/sage-a4.png'
+}
+
+/* Aparecer/Desaparecer Mneu do menu */
+function aparecerMenu(menu) {
+  document.querySelector('#'+menu).style.display = 'grid'
+}
+
+function desapareserMenu(menu){
+  document.querySelector('#'+menu).style.display = 'none'
 }

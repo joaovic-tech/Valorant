@@ -499,7 +499,6 @@ footer{
 
 @media (min-width: 1900px) {
   footer{
-    
     position: absolute;
     bottom: 0;
   }
@@ -576,24 +575,7 @@ footer{
 
 @media(max-width: 780px){
   body footer{
-    display: block;
-  }
-
-  .c1{
-    position: absolute;
-    left: 1rem;
-  }
-
-  .card,card-second{
-    width: 100%;
-  }
-  .card::before{
-    left: 35rem;
-  }
-
-  .img-footer{
-    top: 1.5rem;
-    left: 14.5rem;
+    display: inline-block;
   }
 }
 
@@ -610,17 +592,21 @@ footer{
     width: 14rem;
     height: 30rem;
   }
+}
 
-  .c1{
+@media(width: 320px){
+  li.agent{
     width: 10rem;
+    height: 20rem;
   }
-  
-  .card::before{
-    left: 14rem;
+  #logo_RiotGames{
+    width: 1rem;
   }
 
-  .img-footer{
-    top: 1.5rem;
-    left: 6.2rem;
+  #logo_valorant{
+    width: 1rem;
+  }
+  #nav .logo{
+    margin: 0;
   }
 }

@@ -329,11 +329,11 @@ li.divT:hover{
   left: -.7rem;
 }
 
-#agent-jeff h1{
+#agent-jett h1{
   top: 2.5rem;
   left: -3rem;
 }
-#agent-jeff p{
+#agent-jett p{
   top: 2.8rem;
   left: .2rem;
 }
@@ -404,8 +404,8 @@ ul #agent-phoenix{
   background-size: cover;
 }
 
-ul #agent-jeff{
-  background-image: url('/img/agent-jeff.png');
+ul #agent-jett{
+  background-image: url('/img/agent-jett.png');
   background-size: cover;
 }
 

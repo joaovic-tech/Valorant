@@ -399,12 +399,17 @@ li.divT:hover{
   transform: translateY(-.8rem);
 }
 
-ul #agent-phoenix{
+#list-agents #agent-phoenix{
   background-image: url('/img/agent-phoenix.png');
   background-size: cover;
 }
 
-ul #agent-sova{
+#list-agents #agent-jett{
+  background-image: url('/img/agent-jett.png');
+  background-size: cover;
+}
+
+#list-agents #agent-sova{
   background-image: url('/img/agent-sova.png');
   background-size: cover;
 }

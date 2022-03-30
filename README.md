@@ -10,16 +10,16 @@ Valorant - design de conceito da página de agentes
   <h2>Mobile</h2>
   <img src="valorant-mobile.jpg">
 </div>
-
-## <b>Tecnologias utulizadasb>:
-<div style="display: inline_block; text-decoration: none; margin-bottom: 30px"><br>
-
+<hr>
+<div align="center"><br>
+  <h1>Tecnologias utulizadas:</h1>
+  
   ![HTML](./img/html.svg) &nbsp;
   ![CSS](./img/css.svg) &nbsp;
   ![JS](./img/js.svg) &nbsp;
+  ![Figma](./img/nodejs.svg) &nbsp;
   ![Git](./img/git.svg) &nbsp;
   ![VSCode](./img/vscode.svg) &nbsp;
   ![Figma](./img/figma.svg) &nbsp;
-
+  
 </div>
-<br><br><br>

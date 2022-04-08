@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joaovic2k/Valorant.git"
+    "url": "git+https://github.com/joaovic-tech/Valorant.git"
   },
-  "author": "joaovic2k",
+  "author": "joaovic-tech",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joaovic2k/Valorant/issues"
+    "url": "https://github.com/joaovic-tech/Valorant/issues"
   },
-  "homepage": "https://github.com/joaovic2k/Valorant#readme",
+  "homepage": "https://github.com/joaovic-tech/Valorant#readme",
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.3"

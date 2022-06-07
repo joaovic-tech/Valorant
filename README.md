@@ -1,14 +1,18 @@
 # Valorant
 Valorant - design de conceito da página de agentes
+No seu terminal dentro do diretório:
+```bash
+git clone "https://github.com/joaovic-tech/Valorant.git"
+```
 <hr>
 <div align="center">
-  <h1>Interfaces</h1>
+  <h1>🌙Interfaces🔆</h1>
   <hr>
-  <h2>Desktop</h2>
-  <img src="valorant.png">
-  <hr>
-  <h2>Mobile</h2>
-  <img src="valorant-mobile.jpg">
+
+| Desktop                                     | Mobile                                            |
+|:-------------------------------------------------:|:-----------------------------------------------:|
+| ![](valorant.png)  | ![](valorant-mobile.jpg)         |
+
 </div>
 <hr>
 <div align="center"><br>
